@@ -1,0 +1,5 @@
+import numpy as np
+actual = np.array([1.0, 2.0, 3.0])
+predicted = np.array([1.1, 1.9, 3.2])
+mse = np.mean((actual - predicted)**2)
+print(f"Mean Squared Error: {mse}")
