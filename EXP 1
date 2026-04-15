@@ -1,0 +1,6 @@
+import statistics
+marks = [85, 92, 78, 92, 88]
+mean = statistics.mean(marks)
+median = statistics.median(marks)
+mode = statistics.mode(marks)
+print(f"Mean: {mean}, Median: {median}, Mode: {mode}")
