@@ -1,0 +1,7 @@
+mport numpy as np
+x = np.array([1, 2, 3, 4, 5])
+y = np.array([2, 4, 5, 4, 5])
+# Analytical formula: m = sum((x - mx)*(y - my)) / sum((x - mx)^2)
+m = np.sum((x - np.mean(x)) * (y - np.mean(y))) / np.sum((x - np.mean(x))**2)
+c = np.mean(y) - m * np.mean(x)
+print(f"Formula: y = {m}x + {c}")
